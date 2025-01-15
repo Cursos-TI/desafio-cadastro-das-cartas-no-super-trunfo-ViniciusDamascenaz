@@ -6,6 +6,14 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
+double pipPerCapta(double pib, int populacao){
+    return (double) pib / populacao;
+}
+
+float densidadePopulacional(float area, int populacao){
+    return (float) populacao / area;
+}
+
 int main() {
 
     int codigoCidade;
@@ -14,7 +22,7 @@ int main() {
     float area;
     double pib;
     int pontosTuristicos;
-
+    
     printf("-------CADASTRO DE CARTAS-------\n");
     printf(" \n");
     printf("Digite o Código da cidade: \n");
@@ -48,6 +56,10 @@ int main() {
     printf("PIB: %.2lf", pib);
     printf(" \n");
     printf("Quantidade de Pontos Turisticos: %d", pontosTuristicos);
+    printf(" \n");
+    printf("Densidade Populacional: %f", densidadePopulacional(area, populacao));
+    printf(" \n");
+    printf("PIP per Capta: %f", pipPerCapta(pib, populacao));
 
 
     return 0;
